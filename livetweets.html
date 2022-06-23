@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Tweets Analysis</title>
+</head>
+
+<body style=" background-image:url('/static/buttons/Light-Blue-HD-Backgrounds.jpg')">
+    
+<h3>User : {{userName}}</h3>
+<p>Top {{NumOfTweets}} Tweets</p>
+<ol>
+<!-- For loop logic of jinja template -->
+{%for i in range(0, len)%}
+    <li><u>{{Tweets[i]}}</u> : <b>{{result[i]}}</b></li>
+{%endfor%}
+
+</ol>
+
+</body>
+<img src="static/buttons/happy-emoji.png" style="padding-left:20%;width:10%;margin-top:5%;padding-top:-60%;">
+<img src="static/buttons/sad1.png" style="padding-left:80%;width:10%;padding-top:-100px;">
+</html>
